@@ -16,7 +16,7 @@ export default {
   methods:{
     getDate(){
       // console.log(this.$http)
-      this.$http.get('https://www.easy-mock.com/mock/5da03fdacda1720dffee6012/list/')
+      this.$http.get('http://www.qulai.com/list')
           .then(res=>{
               console.log(res)
           })

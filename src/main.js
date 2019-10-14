@@ -2,7 +2,9 @@ import Vue from 'vue'
 import App from './App.vue'
 import '../public/css/reset.css'
 import './untils/rem'
-
+import wcSwiper from 'wc-swiper'
+import 'wc-swiper/style.css'
+Vue.use(wcSwiper)
 // import { Search } from 'mint-ui';  //按需求引入mint-ui组件
 // Vue.component(Search.name, Search);  
 
