@@ -8,13 +8,48 @@ const cateCom = ()=>import('../pages/cate')
 const cartCom = ()=>import('../pages/cart')
 const myCom = ()=>import('../pages/my')
 
+const cateHot = ()=>import('@/pages/cate/catecontent/cateHot')
+const cateDei = ()=>import('@/pages/cate/catecontent/cateDei')
+const cateLive = ()=>import('@/pages/cate/catecontent/cateLive')
+const cateClothing = ()=>import('@/pages/cate/catecontent/cateClothing')
+
+
 //配置路由
 const routes=[
     {path:'/',redirect:'/home'},
     {path:'/home',component:shouYe},
-    {path:'/cate',component:cateCom},
+    {path:'/cate',component:cateCom,
+        children:[
+            {
+                path:'/cateHot',
+                name:"cateHot",
+                component:cateHot
+            },
+           {
+                path:'/cateDei',
+                name:"cateDei",
+                component:cateDei
+            },
+            {
+                path:'/cateLive',
+                name:"cateLive",
+                component:cateLive
+            },
+            {
+                path:'/cateClothing',
+                name:"cateClothing",
+                component:cateClothing
+            },
+            {
+                path:"/",
+                redirect:"/cateHot"
+            }
+            
+        ]
+    },
     {path:'/cart',component:cartCom},
     {path:'/my',component:myCom},
+  
 ]
 
 //实例化
