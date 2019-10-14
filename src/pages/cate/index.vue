@@ -2,7 +2,7 @@
         <div class='item'>
             <headerCom></headerCom>
             <div class="content">
-                分类内容
+                hahhahah
             </div>
             
             <footerCom></footerCom>
