@@ -2,7 +2,7 @@
         <div class='item'>
             <headerCom></headerCom>
             <div class="content">
-                购物车内容
+                
             </div>
             
             <footerCom></footerCom>
@@ -16,7 +16,7 @@
         components:{
             footerCom,
             headerCom
-        }
+        },
     }
     </script>
     
