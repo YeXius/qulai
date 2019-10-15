@@ -1,0 +1,16 @@
+{
+    "data":[
+        {
+            "img":"tuijian3.png",
+             "p":"新品上线"
+        },
+         {
+            "img":"tuijian2.png",
+             "p":"折扣专区"
+        },
+        {
+           "img":"tuijian1.png",
+            "p":"热门促销"
+       }
+    ]
+}

@@ -2,11 +2,14 @@
     <div class="hot">
         <h3>————热门推荐————</h3>
 
-        <div class="hot-content">
-                <div class="hot-content-one">
-                    <img src="../../../../public/images/images/images/tuijian3.png" alt="">
-                    <p>新品上线</p>
+        <div class="hot-content" >
+        
+                 <div class="hot-content-one" v-for="(item,key) in list" :key="key">
+                    <img :src="'../../../../'" alt="">
+                    <p>{{item.p}}</p>
                 </div>
+           
+<!--                
                   <div class="hot-content-one">
                     <img src="../../../../public/images/images/images/tuijian2.png" alt="">
                     <p>折扣专区</p>
@@ -14,7 +17,7 @@
                   <div class="hot-content-one">
                     <img src="../../../../public/images/images/images/tuijian1.png" alt="">
                     <p>热门促销</p>
-                </div>
+                </div> -->
                
         </div>
     </div>
@@ -25,9 +28,16 @@
         name:'cateHot',
         data(){
             return{
-
+                list:[]
             }
-        }
+        },
+        created() {
+           this.$http.get('http://localhost:8081/json/cate1.json').then((res)=>{
+               console.log(res.data.data);
+               this.list=res.data.data
+           })
+        },
+
     }
 </script>
 

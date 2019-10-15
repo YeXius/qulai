@@ -18,7 +18,7 @@ export default {
       // console.log(this.$http)
       this.$http.get('http://www.qulai.com/list')
           .then(res=>{
-              console.log(res)
+              // console.log(res)
           })
     }
   }
