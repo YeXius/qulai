@@ -168,7 +168,7 @@
   computed: {
     total(){
         var str = 0;
-        this.list.forEach((item)=>{
+        this.list.forEach((item,index)=>{
             str += item.number * item.price
         })
         return str
