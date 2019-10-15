@@ -11,16 +11,16 @@ export default {
     
   },
   created(){
-    this.getDate();
+    // this.getDate();
   },
   methods:{
-    getDate(){
-      // console.log(this.$http)
-      this.$http.get('http://www.qulai.com/list')
-          .then(res=>{
-              console.log(res)
-          })
-    }
+    // getDate(){
+    //   // console.log(this.$http)
+    //   this.$http.get('http://www.qulai.com/list')
+    //       .then(res=>{
+    //           console.log(res)
+    //       })
+    // }
   }
 }
 </script>

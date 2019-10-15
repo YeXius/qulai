@@ -2,6 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import '../public/css/reset.css'
 import './untils/rem'
+import store from './store/index'
 
 // import { Search } from 'mint-ui';  //按需求引入mint-ui组件
 // Vue.component(Search.name, Search);  
@@ -16,5 +17,6 @@ Vue.config.productionTip = false
 
 new Vue({
   router,
+  store,
   render: h => h(App),
 }).$mount('#app')
