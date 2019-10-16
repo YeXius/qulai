@@ -1,12 +1,47 @@
 {
     "data":[
         {
-            "img":"dianzi1.png",
+            
+            "detail":"detail1",
+            "id":1,
+            "img":"./images/images/images/dianzi1.png",
              "p":"家用"
         },
          {
-            "img":"dianzi2.png",
+            "detail":"detail2",
+            "id":2,
+            "img":"./images/images/images/dianzi2.png",
              "p":"手机"
         }
+    ],
+    "detail1":[
+        {
+            "id":1,
+            "img":"./images/images/detail7.png",
+            "name":"智米加湿器 白色",
+            "price":249.00,
+            "pricenum":244.02,
+            "a":"50"
+        },
+        {
+            "id":2,
+            "img":"./images/images/detail5.png",
+            "name":"无线吸尘器F8...",
+            "price":0.02,
+            "pricenum":0.02,
+            "a":"374"
+        }
+       
+    ],
+    "detail2":[
+        {
+            "id":3,
+            "img":"./images/images/detail2.png",
+            "name":"华为科技潮牌...",
+            "price":2999.00,
+            "pricenum":2939.02,
+            "a":"23"
+        }
+       
     ]
 }

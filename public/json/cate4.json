@@ -1,12 +1,39 @@
 {
     "data":[
         {
-            "img":"fushi1.png",
+            "detail":"detail1",
+            "id":1,
+            "img":"./images/images/images/fushi1.png",
              "p":"衣服"
         },
          {
-            "img":"fushi2.png",
+            "detail":"detail2",
+            "id":2,
+            "img":"./images/images/images/fushi2.png",
              "p":"帽子"
+        }
+    ],
+    "detail1":[
+        { 
+            "id":1,
+            "img":"./images/images/detail1.png",
+            "name":"风衣女中长款2910秋",
+            "price":589.00,
+            "pricenum":577.22,
+            "a":"65"
+        }
+        
+          
+        
+    ],
+    "detail2":[
+        {
+            "id":2,
+            "img":"./images/images/detail3.png",
+            "name":"潮流刺绣字母棒球帽",
+            "price":88.00,
+            "pricenum":86.24,
+            "a":"13"
         }
     ]
 }

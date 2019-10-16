@@ -3,14 +3,15 @@
             <h3>————服饰用品————</h3>
 
         <div class="hot-content">
-                <div class="hot-content-one">
-                    <img src="../../../../public/images/images/images/fushi1.png" alt="">
-                    <p>衣服</p>
-                </div>
-                  <div class="hot-content-one">
+                <router-link :to="'/Details4?id='+item.detail" tag="div" class="hot-content-one" v-for="(item,key) in list" :key="key">
+              
+                     <img :src="item.img" alt="">
+                    <p>{{item.p}}</p>
+                </router-link>
+                  <!-- <div class="hot-content-one">
                     <img src="../../../../public/images/images/images/fushi2.png" alt="">
                     <p>帽子</p>
-                </div>
+                </div> -->
                 
                
         </div>
@@ -22,9 +23,15 @@
         name:'cateClothing',
         data(){
             return{
-
+                list:[]
             }
-        }
+        }, 
+         created() {
+           this.$http.get('http://localhost:8080/json/cate4.json').then((res)=>{
+            //    console.log(res.data.data);
+               this.list=res.data.data
+           })
+         }
     }
 </script>
 

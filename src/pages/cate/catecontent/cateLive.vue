@@ -3,14 +3,15 @@
            <h3>————生活用品————</h3>
 
         <div class="hot-content">
-                <div class="hot-content-one">
-                    <img src="../../../../public/images/images/images/shenghuo1.png" alt="">
-                    <p>抽纸</p>
-                </div>
-                  <div class="hot-content-one">
+                <router-link :to="'/Details3?id='+item.detail" tag="div" class="hot-content-one" v-for="(item,key) in list" :key="key">
+                
+                     <img :src="item.img" alt="">
+                    <p>{{item.p}}</p>
+                </router-link>
+                  <!-- <div class="hot-content-one">
                     <img src="../../../../public/images/images/images/shenghuo2.png" alt="">
                     <p>卫生纸</p>
-                </div>
+                </div> -->
                 
                
         </div>
@@ -22,9 +23,15 @@
         name:'cateLive',
         data(){
             return{
-
+                list:[]
             }
-        }
+        }, 
+         created() {
+           this.$http.get('http://localhost:8080/json/cate3.json').then((res)=>{
+            //    console.log(res.data.data);
+               this.list=res.data.data
+           })
+        },
     }
 </script>
 

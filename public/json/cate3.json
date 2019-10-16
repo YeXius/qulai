@@ -1,12 +1,36 @@
 {
     "data":[
         {
-            "img":"shenghuo1.png",
+            "detail":"detail1",
+            "id":1,
+            "img":"./images/images/images/shenghuo1.png",
              "p":"抽纸"
         },
          {
-            "img":"shenghuo2.png",
+            "detail":"detail2",
+            "id":2,
+            "img":"./images/images/images/shenghuo2.png",
              "p":"卫生纸"
+        }
+    ],
+    "detail1":[
+        {
+            "id":1,
+            "img":"./images/images/detail4.png",
+            "name":"斑布本色抽纸3层...",
+            "price":59.90,
+            "pricenum":58.72,
+            "a":"84"
+        }
+    ],
+     "detail2":[
+        {
+            "id":2,
+            "img":"./images/images/detail7.png",
+            "name":"柔无限1700克竹浆卫生...",
+            "price":20.90,
+            "pricenum":20.49,
+            "a":"658"
         }
     ]
 }

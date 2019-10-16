@@ -3,11 +3,11 @@
         <h3>————热门推荐————</h3>
 
         <div class="hot-content" >
-        
-                 <div class="hot-content-one" v-for="(item,key) in list" :key="key">
-                    <img :src="'../../../../'" alt="">
+            <!-- //跳转到详情页一里面 -->
+                <router-link :to="'/Details1?id='+item.detail" tag="div" class="hot-content-one" v-for="(item,key) in list" :key="key">
+                    <img :src="item.img" alt="">
                     <p>{{item.p}}</p>
-                </div>
+                </router-link>
            
 <!--                
                   <div class="hot-content-one">
@@ -20,6 +20,7 @@
                 </div> -->
                
         </div>
+         
     </div>
 </template>
 
@@ -32,8 +33,8 @@
             }
         },
         created() {
-           this.$http.get('http://localhost:8081/json/cate1.json').then((res)=>{
-               console.log(res.data.data);
+           this.$http.get('http://localhost:8080/json/cate1.json').then((res)=>{
+            //    console.log(res.data.data);       
                this.list=res.data.data
            })
         },

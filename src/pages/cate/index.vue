@@ -1,5 +1,6 @@
 <template>
         <div class='item'>
+              
             <headerCom></headerCom>
             <div class="content">
                
@@ -29,9 +30,11 @@
                 
                 <div class="content-right">
                     <router-view></router-view>
+                    
                 </div>
+               
             </div>
-            
+          
             <footerCom></footerCom>
         </div>
     </template>

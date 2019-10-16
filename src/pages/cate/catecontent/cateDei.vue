@@ -3,14 +3,14 @@
          <h3>————电子设备————</h3>
 
         <div class="hot-content">
-                <div class="hot-content-one">
-                    <img src="../../../../public/images/images/images/dianzi1.png" alt="">
-                    <p>家用</p>
-                </div>
-                  <div class="hot-content-one">
+                <router-link :to="'/Details2?id='+item.detail" tag="div" class="hot-content-one" v-for="(item,key) in list" :key="key">
+                    <img :src="item.img" alt="">
+                    <p>{{item.p}}</p>
+                </router-link>
+                  <!-- <div class="hot-content-one">
                     <img src="../../../../public/images/images/images/dianzi2.png" alt="">
                     <p>手机</p>
-                </div>
+                </div> -->
                 
                
         </div>
@@ -22,9 +22,15 @@
         name:'catcateDei',
         data(){
             return{
-
+                list:[]
             }
-        }
+        },
+         created() {
+           this.$http.get('http://localhost:8080/json/cate2.json').then((res)=>{
+               console.log(res.data.data);
+               this.list=res.data.data
+           })
+        },
     }
 </script>
 

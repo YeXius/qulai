@@ -2,7 +2,7 @@
     <div class='item'>
         <headerCom></headerCom>
         <div class="content">
-            首页内容
+           
         </div>
         
         <footerCom></footerCom>
@@ -16,7 +16,18 @@ import footerCom from '../../components/footer'
         components:{
             footerCom,
             headerCom
-        }
+        },
+        data() {
+            return {
+               
+            
+            }
+        },
+        methods: {
+          
+            
+            
+        },
     }
 </script>
 
